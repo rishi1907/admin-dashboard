@@ -20,26 +20,40 @@ body{
    
 }
 .header input{
-    max-width: 60%;
-    max-height: 30%;
-    margin-left: 5%;
+    width: 60%;
+    max-height: 40%;
     border-radius: 25px;
     outline: none; 
 }
+.header .input{
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+
+
 .first-header-line .user-name {
     font-weight: bolder;
     font-size: 1.5rem;
+    display: flex;
+    align-items: center;
 }
 .header .second-header-line{
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 2fr 1fr;
     align-items: center;
+    
+    
 }
 .second-header-line .user-name{
     margin-left: 10%;
     font-size: 2rem;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 .second-header-line button{
     width: 25%;
@@ -106,18 +120,39 @@ body{
     justify-content: center;
 }
 
-.trending div{
-    
-  
+
+
+.dashboard-sign,.home,.profile,.messages,.history,.tasks,.communities,.settings,.support,.privacy {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
+img {
+    height: 3rem;
+    width: auto;
+    border-radius: 50px;
+}
 
+.second-header-line img {
+    height: 4rem;
+    width: auto;
+    border-radius: 50px;
+}
+span{
+    
+}
 
+.second-header-line .user-name::after{
+    content: "hi,there,";
+    font-size: 1rem;
+    position: absolute;
+    top: 5px;
+    right: 86%;
+}
 
-
-
-
-
-
+.main-content .projects::before{
+    
+}
 
 
